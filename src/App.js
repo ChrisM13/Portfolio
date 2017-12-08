@@ -16,9 +16,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <video type="video/mp4" autoPlay loop id="video-background" muted>
-          <source src="assets/video/portfolioVid.mp4" />
-        </video>
         <Router>
           <div className="container">
             <NavBar />
