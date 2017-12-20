@@ -1,0 +1,18 @@
+Parallax {
+    width: 100%;
+}
+
+.parallaxDiv {
+    width: 100%;
+
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 25px;
+}
+
+h4 {
+    color: black;
+}

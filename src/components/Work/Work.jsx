@@ -1,43 +1,25 @@
 import React from 'react';
-import {Parallax} from 'react-materialize'
+import {Parallax, Button} from 'react-materialize'
+import './Work.css'
 
-const Work = () => {
+
+const Work = (props) => {
     return (
-        <div>
-            <h1>Work</h1>
-                <h2 className="alienSweeper">Alien Sweeper</h2>
-                <Parallax imageSrc="https://i.imgur.com/H8FWCP3.png"/>
-                    <div className="section white">
-                        <div className="row container">
-                            <h4 className="alienSweeper">Alien Sweeper</h4>
-                            <p className="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-                        </div>
+        props.projects.map(project => 
+        <div className="parallaxDiv">
+            <h2>{project.name}</h2>
+            <Parallax imageSrc={project.img}/>
+                <div className="section white">
+                    <div className="row container">
+                        <h4>{project.name}</h4>
+                        <p className="grey-text text-darken-3 lighten-3">{project.description}</p>
+                        <Button target="_blank" node='a' href={project.liveURL}>Visit</Button>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <Button target="_blank" node='a'href={project.repoURL}>Github Repo</Button>
                     </div>
-                <h2 className="alienSweeper">WhatCha Think</h2>
-                <Parallax imageSrc="https://i.imgur.com/5ZI4Ie3.png"/>
-                    <div className="section white">
-                        <div className="row container">
-                            <h4 className="alienSweeper">WhatCha Think</h4>
-                            <p className="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-                        </div>
-                    </div>
-                <h2 className="alienSweeper">Divide and Costco</h2>
-                <Parallax imageSrc="https://i.imgur.com/CrRa6CK.png"/>
-                    <div className="section white">
-                        <div className="row container">
-                            <h4 className="alienSweeper">Divide and Costco</h4>
-                            <p className="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-                        </div>
-                    </div>
-            <h2 className="alienSweeper">Project 4</h2>
-                <Parallax imageSrc="http://materializecss.com/images/parallax1.jpg"/>
-                    <div className="section white">
-                        <div className="row container">
-                            <h4 className="alienSweeper">Project 4</h4>
-                            <p className="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-                        </div>
-                    </div>
+                </div>
         </div>
+        )
     )
 }
 

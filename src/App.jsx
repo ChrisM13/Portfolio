@@ -11,8 +11,16 @@ import Resume from './components/Resume/Resume'
 import Work from './components/Work/Work'
 import About from './components/About/About'
 import Extra from './components/Extra/Extra'
+import database from './config/database'
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      projects: database
+    }
+  }
+
   render() {
     return (
       <div className="App">
@@ -21,7 +29,11 @@ class App extends Component {
             <NavBar />
               <Switch>
                 <Route path='/resume' component={Resume}/>
-                <Route path='/work' component={Work}/>
+                <Route path='/work' render={(props) =>
+                  <Work
+                    projects={this.state.projects}
+                    />
+                  }/>
                 <Route exact path='/' component={Home}/>
                 <Route path='/about' component={About}/>
                 <Route path='/extra' component={Extra}/>
