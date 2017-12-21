@@ -1,3 +1,7 @@
 .resume {
     min-height: 75vh;
 }
+
+a {
+    color: white;
+}

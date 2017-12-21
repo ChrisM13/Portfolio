@@ -1,4 +1,4 @@
-.NavBar {
+Navbar {
     display: flex;
     justify-content: center;
     margin: 0 0 20px;
@@ -10,4 +10,8 @@
 
 .NavBar-link {
   margin: 0 10px;
+}
+
+.chris {
+  
 }

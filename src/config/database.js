@@ -24,7 +24,7 @@ const database = [
         {keyword: "Node.js", icon: "devicon-nodejs-plain colored"},
         {keyword: "HTML5", icon: "devicon-html5-plain colored"},
         {keyword: "CSS3", icon: "devicon-css3-plain colored"},
-        {keyword: "Materialize", icon: ""}
+        {keyword: "Materialize", icon: "fa fa-google-wallet"}
     ],
     liveURL: "https://lets-work.herokuapp.com/",
     repoURL: "https://github.com/ChrisM13/Lets-Work"
@@ -40,9 +40,9 @@ const database = [
         {keyword: "MongoDB", icon: "devicon-mongodb-plain colored"},
         {keyword: "HTML5", icon: "devicon-html5-plain colored"},
         {keyword: "CSS3", icon: "devicon-css3-plain colored"},
-        {keyword: "Materialize", icon: ""},
+        {keyword: "Materialize", icon: "fa fa-google-wallet"},
         {keyword: "GoogleMapsAPI", icon: ""},
-        {keyword: "YelpAPI", icon: ""}
+        {keyword: "YelpAPI", icon: "fa fa-yelp"}
     ],
     liveURL: "https://divide-and-costco.herokuapp.com/",
     repoURL: "https://github.com/ChrisM13/MineSweeper"
