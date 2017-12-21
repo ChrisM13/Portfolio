@@ -9,8 +9,8 @@ import './Work.css'
 
 const Work = (props) => {
     return (
-        props.projects.map(project => 
-        <div className="parallaxDiv">
+        props.projects.map((project, idx) => 
+        <div className="parallaxDiv" key={idx}>
             <h2>{project.name}</h2>
             <Parallax imageSrc={project.img}/>
                 <div className="section white">
@@ -21,10 +21,10 @@ const Work = (props) => {
                             <p className="grey-text text-darken-3 lighten-3">{project.description}</p>
                         </div>
                         <div className="container icons">
-                            {project.keyWords.map(key => 
-                            <Col s={3}>
+                            {project.keyWords.map((key, idx) => 
+                            <Col s={3} key={idx}>
                                 <Chip>
-                                    <i class={key.icon}></i>
+                                    <i className={key.icon}></i>
                                     &nbsp;&nbsp;
                                     {key.keyword}
                                 </Chip>
