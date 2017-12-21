@@ -25,7 +25,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <div className="container">
+          <div>
             <NavBar />
               <Switch>
                 <Route path='/resume' component={Resume}/>

@@ -7,6 +7,20 @@ Parallax {
 
 }
 
+.description {
+    display: inline-flex;
+    text-align: left;
+    width: 40%;
+}
+
+.icons {
+    display: inline-flex;
+    text-align: right;
+    flex-wrap: wrap;
+    width: 50%;
+
+}
+
 p {
     font-size: 20px;
     text-align: left;
