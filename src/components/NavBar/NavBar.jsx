@@ -12,7 +12,7 @@ function onClick(event) {
 
 const NavBar = (props) => {
   return (
-    <Navbar className="black navbar" brand="" left fixed onClick={onClick}>    
+    <Navbar className="black navbar" brand="" center fixed onClick={onClick}>    
       <ul>
         <li><Link to="/" className='NavBar-link Chris'>Chris Mosier</Link></li>
         <li><Link to="/work" className='NavBar-link'>Work</Link></li>
